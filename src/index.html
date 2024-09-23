@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mindful Me</title>
+  </head>
+  <body>
+    <div class="logo-container mt-5">
+      <img src="../assets/img/logo.png" alt="Mindful Me logo" class="logo" />
+      <h1 class="ms-3">Mindful Me</h1>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row mb-3">
+        <div class="col d-flex align-items-center justify-content-center">
+          <label for="firstname" class="form-label me-2 w-25 text-center"
+            >Enter your first name:</label
+          >
+          <input type="text" class="form-control w-25" id="firstname" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex align-items-center justify-content-center">
+          <label for="question" class="form-label me-2 w-25 text-center"
+            >What is troubling you today?</label
+          >
+          <select class="form-select w-25" aria-label="Default select example">
+            <option selected>Select an option</option>
+            <option value="anxiety">Anxiety</option>
+            <option value="depression">Depression</option>
+            <option value="loneliness">Loneliness</option>
+            <option value="grief">Grief</option>
+            <option value="burnout">Burnout</option>
+            <option value="stress">Stress</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
