@@ -32,3 +32,16 @@ h1 {
 input, select {
     color: #588157;
 }
+
+button {
+    margin-left: 110px;
+    width: 100px;
+    height: 40px;
+    background-color: #283618;
+    color: white;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #588157;
+}
