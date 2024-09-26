@@ -45,3 +45,7 @@ button {
 button:hover {
     background-color: #588157;
 }
+
+button:disabled {
+    background-color: #a3b18a;
+}
