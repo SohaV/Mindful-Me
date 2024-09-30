@@ -46,6 +46,8 @@ button:hover {
     background-color: #588157;
 }
 
-button:disabled {
-    background-color: #a3b18a;
+.error-firstname, .error-dropdown {
+    color: red;
+    font-size: large;
+    right: 200px;
 }

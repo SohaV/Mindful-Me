@@ -20,15 +20,23 @@
 
     <div class="container mt-5">
       <div class="row mb-3">
-        <div class="col d-flex align-items-center justify-content-center">
+        <div
+          class="col d-flex align-items-center justify-content-center position-relative"
+        >
           <label for="firstname" class="form-label me-2 w-25 text-center"
             >Enter your first name:</label
           >
           <input type="text" class="form-control w-25" id="firstname" />
+          <span class="error-firstname position-absolute d-none"
+            >Enter first name</span
+          >
         </div>
       </div>
+
       <div class="row">
-        <div class="col d-flex align-items-center justify-content-center">
+        <div
+          class="col d-flex align-items-center justify-content-center position-relative"
+        >
           <label for="question" class="form-label me-2 w-25 text-center"
             >What is troubling you today?</label
           >
@@ -45,10 +53,13 @@
             <option value="burnout">Burnout</option>
             <option value="stress">Stress</option>
           </select>
+          <span class="error-dropdown position-absolute d-none"
+            >Select an option</span
+          >
         </div>
       </div>
       <div class="d-flex align-items-center justify-content-center">
-        <button id="button" class="mt-5" disabled>Next</button>
+        <button id="button" class="mt-5">Next</button>
       </div>
     </div>
     <script src="./script.js"></script>
