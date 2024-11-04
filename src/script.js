@@ -7,14 +7,26 @@ const errorDropDown = document.querySelector(".error-dropdown");
 function checkFirstName() {
   if (firstName.value == "") {
     errorFirstName.classList.remove("d-none");
+  } else {
+    errorFirstName.classList.add("d-none");
   }
 }
 
 function checkDropDown() {
   if (concern.selectedIndex == "0") {
     errorDropDown.classList.remove("d-none");
+  } else {
+    errorDropDown.classList.add("d-none");
   }
 }
 
-button.addEventListener("click", checkFirstName);
-button.addEventListener("click", checkDropDown);
+function validateAndNavigate() {
+  checkFirstName();
+  checkDropDown();
+
+  if (firstName.value !== "" && concern.selectedIndex !== 0) {
+    window.location.href = "information.html";
+  }
+}
+
+button.addEventListener("click", validateAndNavigate);
